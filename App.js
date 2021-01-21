@@ -9,10 +9,10 @@ const App = () => (
   <SafeAreaView style={styles.container}>
     <View>
       <Text style={styles.title}>
-        The title and onPress handler are required. It is recommended to set accessibilityLabel to help make your app usable by everyone.
+        The title and ppponPress handler are required. It is recommended to set accessibilityLabel to help make your app usable by everyone.
       </Text>
       <Button
-        title="Press me"
+        title="Press make"
         onPress={() => Alert.alert('Simple Button pressed')}
       />
     </View>
@@ -27,6 +27,15 @@ const App = () => (
         onPress={() => Alert.alert('Button with adjusted color pressed')}
       />
     </View>
+
+    <TouchableOpacity style={{backgroundColor: "red", padding: 20}} onPress={()=> {
+      console.log('does not work');
+      }
+     }>
+      <Text>X</Text>
+    </TouchableOpacity>
+
+
     <Separator />
     <View>
       <Text style={styles.title}>
